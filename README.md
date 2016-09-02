@@ -1,6 +1,7 @@
+## pomodoro-bitbar-plugin
+
 Plugin is under active development.
 
-## pomodoro-bitbar-plugin
 Plugin for [BitBar](https://github.com/matryer/bitbar).
 [The Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) is a time management method developed by Francesco Cirillo. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks.
 
@@ -12,7 +13,7 @@ Plugin for [BitBar](https://github.com/matryer/bitbar).
  - Make sure it's executable (in Terminal, do chmod +x moex.1m.rb)
 
 
-### Underlying principles[edit]
+### Underlying principles
 There are six stages in the technique:
 
  1. Decide on the task to be done.
