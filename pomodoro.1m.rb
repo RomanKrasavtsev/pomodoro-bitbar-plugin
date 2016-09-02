@@ -5,36 +5,30 @@
 # <bitbar.author>Roman Krasavtsev</bitbar.author>
 # <bitbar.author.github>RomanKrasavtsev</bitbar.author.github>
 # <bitbar.desc>The Pomodoro Technique is a time management method developed by Francesco Cirillo</bitbar.desc>
-# <bitbar.image></bitbar.image>
+# <bitbar.image>https://raw.github.com/romankrasavtsev/pomodoro-bitbar-plugin/master/pomodoro-bitbar-plugin.png</bitbar.image>
 # <bitbar.dependencies>ruby</bitbar.dependencies>
-# <bitbar.abouturl></bitbar.abouturl>
+# <bitbar.abouturl>https://github.com/RomanKrasavtsev/pomodoro-bitbar-plugin</bitbar.abouturl>
 
 DIR = Dir.pwd
 POMODORO_FILE = "/tmp/pomodoro"
 MINUTES = 25
 
 def start
-  puts "start"
 end
 
 def stop
-  puts "stop"
 end
 
 def pause
-  puts "pause"
 end
 
 def restart
-  puts "restart"
 end
 
 def step
-  puts "step"
 end
 
 command = ARGV[0]
-
 case command
 when "start"
   start
@@ -49,6 +43,12 @@ else
 end
 
 puts "🍅"
+puts "---"
+puts "Start"
+puts "Stop"
+puts "Pause"
+puts "Resume"
+puts "Restart"
 
 # if File.exist? POMODORO_FILE
 #   file = File.open(POMODORO_FILE, "r+")
