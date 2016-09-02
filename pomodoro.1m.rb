@@ -10,21 +10,57 @@
 # <bitbar.abouturl></bitbar.abouturl>
 
 DIR = Dir.pwd
-FILE_NAME = "/tmp/pomodoro"
+POMODORO_FILE = "/tmp/pomodoro"
 MINUTES = 25
 
-puts "🍅"
-if File.exist? FILE_NAME
-  file = File.open(FILE_NAME, "r+")
-  time = file.read
-  puts " #{time} #{time == 1 ? 'minute' : 'minutes'}"
-  puts "--"
-  puts "Pause | bash=#{__FILE__} pause"
-  puts "Stop | bash=#{__FILE__} stop"
-  puts "Restart | bash=#{__FILE__} start"
-else
-  file = File.new(FILE_NAME, "w")
-
-  puts = "--"
-  puts = "Start | bash=#{__FILE__} start"
+def start
+  puts "start"
 end
+
+def stop
+  puts "stop"
+end
+
+def pause
+  puts "pause"
+end
+
+def restart
+  puts "restart"
+end
+
+def step
+  puts "step"
+end
+
+command = ARGV[0]
+
+case command
+when "start"
+  start
+when "stop"
+  stop
+when "pause"
+  pause
+when "restart"
+  restart
+else
+  step
+end
+
+puts "🍅"
+
+# if File.exist? POMODORO_FILE
+#   file = File.open(POMODORO_FILE, "r+")
+#   time = file.read
+#   puts " #{time} #{time == 1 ? 'minute' : 'minutes'}"
+#   puts "--"
+#   puts "Pause | bash=#{__FILE__} pause"
+#   puts "Stop | bash=#{__FILE__} stop"
+#   puts "Restart | bash=#{__FILE__} start"
+# else
+#   file = File.new(POMODORO_FILE, "w")
+#
+#   puts = "--"
+#   puts = "Start | bash=#{__FILE__} start"
+# end
