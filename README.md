@@ -9,10 +9,9 @@ Plugin for [BitBar](https://github.com/matryer/bitbar).
 ![BitBar Example showing plugin](https://raw.github.com/romankrasavtsev/pomodoro-bitbar-plugin/master/pomodoro-bitbar-plugin.png)
 
 ### How to use plugin
- - Install ruby
+ - [Install ruby](https://www.ruby-lang.org/en/documentation/installation/)
  - Drop pomodoro.1m.rb file into your BitBar plugins folder
  - Make sure it's executable (in Terminal, do chmod +x moex.1m.rb)
-
 
 ### Underlying principles
 There are six stages in the technique:
