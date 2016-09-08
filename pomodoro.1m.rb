@@ -44,11 +44,11 @@ end
 
 puts "🍅"
 puts "---"
-puts "Start"
-puts "Stop"
-puts "Pause"
-puts "Resume"
-puts "Restart"
+puts "Start | bash=#{__FILE__} param1=start terminal=false"
+puts "Stop | bash=#{__FILE__} param1=stop terminal=false"
+puts "Pause | bash=#{__FILE__} param1=pause terminal=false"
+puts "Resume | bash=#{__FILE__} param1=resume terminal=false"
+puts "Restart | bash=#{__FILE__} param1=restart terminal=false"
 
 # if File.exist? POMODORO_FILE
 #   file = File.open(POMODORO_FILE, "r+")
