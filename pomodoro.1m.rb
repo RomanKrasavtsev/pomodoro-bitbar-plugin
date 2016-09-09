@@ -14,18 +14,39 @@ POMODORO_FILE = "/tmp/pomodoro"
 MINUTES = 25
 
 def start
+  puts "Stop | bash=#{__FILE__} param1=stop terminal=false"
+  puts "Pause | bash=#{__FILE__} param1=pause terminal=false"
+  puts "Restart | bash=#{__FILE__} param1=restart terminal=false"
 end
 
 def stop
+  puts "Start | bash=#{__FILE__} param1=start terminal=false"
 end
 
 def pause
+  puts "Resume | bash=#{__FILE__} param1=resume terminal=false"
+  puts "Stop | bash=#{__FILE__} param1=stop terminal=false"
+  puts "Restart | bash=#{__FILE__} param1=restart terminal=false"
 end
 
 def restart
 end
 
 def step
+  # if File.exist? POMODORO_FILE
+  #   file = File.open(POMODORO_FILE, "r+")
+  #   time = file.read
+  #   puts " #{time} #{time == 1 ? 'minute' : 'minutes'}"
+  #   puts "--"
+  #   puts "Pause | bash=#{__FILE__} pause"
+  #   puts "Stop | bash=#{__FILE__} stop"
+  #   puts "Restart | bash=#{__FILE__} start"
+  # else
+  #   file = File.new(POMODORO_FILE, "w")
+  #
+  #   puts = "--"
+  #   puts = "Start | bash=#{__FILE__} start"
+  # end
 end
 
 command = ARGV[0]
@@ -44,23 +65,3 @@ end
 
 puts "🍅"
 puts "---"
-puts "Start | bash=#{__FILE__} param1=start terminal=false"
-puts "Stop | bash=#{__FILE__} param1=stop terminal=false"
-puts "Pause | bash=#{__FILE__} param1=pause terminal=false"
-puts "Resume | bash=#{__FILE__} param1=resume terminal=false"
-puts "Restart | bash=#{__FILE__} param1=restart terminal=false"
-
-# if File.exist? POMODORO_FILE
-#   file = File.open(POMODORO_FILE, "r+")
-#   time = file.read
-#   puts " #{time} #{time == 1 ? 'minute' : 'minutes'}"
-#   puts "--"
-#   puts "Pause | bash=#{__FILE__} pause"
-#   puts "Stop | bash=#{__FILE__} stop"
-#   puts "Restart | bash=#{__FILE__} start"
-# else
-#   file = File.new(POMODORO_FILE, "w")
-#
-#   puts = "--"
-#   puts = "Start | bash=#{__FILE__} start"
-# end
