@@ -8,13 +8,13 @@ Plugin for [BitBar](https://github.com/matryer/bitbar).
 
 ![Pomodoro plugin](https://raw.github.com/romankrasavtsev/pomodoro-bitbar-plugin/master/pomodoro-bitbar-plugin.png)
 
-### How to use
+## How to use
  - Install [BitBar](https://github.com/matryer/bitbar#get-started)
  - Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
  - Drop pomodoro.1m.rb file into your BitBar plugins folder
  - Make sure it's executable (in Terminal, do chmod +x pomodoro.1m.rb)
 
-### Underlying principles
+## Underlying principles
 There are six stages in the technique:
 
  1. Decide on the task to be done.
@@ -25,3 +25,8 @@ There are six stages in the technique:
  6. Else (i.e. after four pomodoros) take a longer break (15–30 minutes), reset your checkmark count to zero, then go to step 1.
 
 A goal of the technique is to reduce the impact of internal and external interruptions on focus and flow. A pomodoro is indivisible. When interrupted during a pomodoro, either the other activity must be recorded and postponed (inform – negotiate – schedule – call back) or the pomodoro must be abandoned.
+
+## Author
+
+[Roman Krasavtsev](https://github.com/RomanKrasavtsev), [@romankrasavtsev](https://twitter.com/romankrasavtsev)
+
