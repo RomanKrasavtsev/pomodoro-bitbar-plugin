@@ -12,7 +12,7 @@ Plugin for [BitBar](https://github.com/matryer/bitbar).
  - Install [BitBar](https://github.com/matryer/bitbar#get-started)
  - Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
  - Drop pomodoro.1m.rb file into your BitBar plugins folder
- - Make sure it's executable (in Terminal, do chmod +x moex.1m.rb)
+ - Make sure it's executable (in Terminal, do chmod +x pomodoro.1m.rb)
 
 ### Underlying principles
 There are six stages in the technique:
